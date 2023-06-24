@@ -1,0 +1,150 @@
+
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube</title>
+    
+<!--Bootstrap 코드 연결-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
+
+<!-- css 코드 연결-->
+  <link rel="stylesheet" href="./style.css" type="text/css" >
+
+</head>
+  <body>
+<!--유사 bootstrap 변형 첨부-->
+  <!-- <nav class="navbar bg-body-tertiary"></nav>
+  <div class="container-fluid"></div> -->
+<nav>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">YouTube</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">-</button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">shorts</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">보관함</a></li>
+            <li><a class="dropdown-item" href="#">시청 기록</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">로그인</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </nav>
+  
+
+<!--왼쪽 메뉴-->
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--YouTube 로고와 버튼--> 
+  <img src="./youtube logo.png" alt="Logo" width="40" height="30">
+   YouTube
+
+<!-- 간격 맞추기 div-->
+  <div style="width: 5%;"></div>
+  <div stylr="width: 25%;"></div>
+
+<!--검색창 ul-->
+  <from class="d-flex" role="search">
+    <input class="from-control me-2" type="search" placeholder="search" aria-label="search">
+      <button class="btn-outline-success" type="submit">검색</button>
+  </from>
+    <div style="width: 30%;"></div>
+
+<!--왼쪽에 펼쳐지는 offcanvas navbar 시작-->
+
+<!-- 위의 버튼-->
+  <div class="button">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link 전체" aria-current="page" href="#">전체</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 요리" href="#">요리</a>
+      <li class="nav-item">
+        <a class="nav-link 음악" href="#">음악</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 게임" href="#">게임</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 최근에 업로드된 동영상" aria-current="page" href="#">최근에 업로드된 동영상</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 뷰티 팁" href="#">뷰티 팁</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 축구" href="#">축구</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link 동물" aria-current="page" href="#">동물</a>
+      </li>
+    </ul>
+  </div>
+ 
+<!--옆면 메뉴-->
+  <div class="button2">
+      <input type="button" value="홈"> <br>
+      <input type="button" value="shorts"> <br>
+      <input type="button" value="구독">
+    <hr>
+      <input type="button" value="보관함">
+      <input type="button" value="시청기록">
+    <hr>
+      <input type="button" value="탐색">
+  </div>
+
+<!--썸네일 위-->
+  <div class="img1">
+      <a href="https://www.youtube.com/watch?v=i3xPJWIP_68&pp=ygUT6riw7Jqw7IykIOuwseuwmOymnQ%3D%3D"><img src="./썸네일 1.png"></a>
+      <a href="https://www.youtube.com/watch?v=x6i3_LfeTjY&pp=ygUJ65a86ruE66Op"><img src="./썸네일 2.png"></a>
+      <a href="https://www.youtube.com/watch?v=OE_p7a3Tt8E&pp=ygUJ7Ja07Y287Lu3"><img src="./썸네일 3.png"></a>
+      <a href="https://www.youtube.com/watch?v=HCkohqnryGg&pp=ygUV7J247IKs7J207Yq47L2U66as7JWE"><img src="./썸네일 4.png"></a>
+    </div>
+ 
+<!--썸네일 아래-->
+   <div class="img2">
+    <a href="https://www.youtube.com/watch?v=yvTJfHprmKI&pp=ygUK64-Z7ZiEa2xkaA%3D%3D"><img src="./썸네일 5.png"></a>
+    <a href="https://www.youtube.com/watch?v=dkH0hjYZrk0&pp=ygUQ6re87ZmpIOyYrOumvO2UvQ%3D%3D"><img src="./썸네일 6.png"></a>
+    <a href="https://www.youtube.com/watch?v=h3glVQbTmks&pp=ygUJ7KeA66y067mE"><img src="./썸네일 7.png"></a>
+    <a href="https://www.youtube.com/watch?v=Kick9Omb38k&pp=ygUT7ZW07Jq064yAIOuwpOyCsOyxhQ%3D%3D"><img src="./썸네일 8.png"></a>
+  </div>
+    
+    <hr>
+
+<!--쇼츠-->
+  <div class="shorts">
+    <img src="./쇼츠.png">
+  </div>
+    
+    <hr>
+
+</body>
+</html>

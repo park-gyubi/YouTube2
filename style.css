@@ -1,0 +1,30 @@
+.div{
+    border-top: 50%;
+    position:relative;
+}
+
+.search-bar{
+    left: 100px;
+}
+
+.button{
+    right: 350px;
+}
+
+.img1{
+    left: 300px;
+}
+
+.img2{
+    left: 300px;
+}
+
+.shorts{
+     left: 300px;
+}
+
+.button2{
+    left: 35px;
+    bottom: 30px;
+}
+
